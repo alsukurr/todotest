@@ -1,0 +1,49 @@
+body {
+    background: #c1c1c1;
+    color: #989898;
+    text-align: center;
+    font-family: sans-serif;
+}
+body > * {
+    text-transform: uppercase;
+}
+#root {
+    max-width: 800px;
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.AddTodo {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+}
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+button {
+    background-color: none;
+    color: #E47F6D;
+    border: 2px solid #E47F6D;
+    text-transform: uppercase;
+}
+button:hover {
+    color: #363636;
+    border: 2px solid #989898;
+    cursor: pointer;
+}
+
+.ShowTodos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+.ShowTodos li {
+    color: #989898;
+    background-color: rgba(255,255,255,.5);
+    background: #ffffff;
+    border-bottom: 2px #363636 solid;
+    padding: 15px;
+    list-style: none;
+}
